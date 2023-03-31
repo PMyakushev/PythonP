@@ -8,14 +8,10 @@
 Решите через рекурсию. В задании нельзя применять циклы.
 Нужно обойтисть без создания массива!
 """
-b = int(input('Введите количество элементов: '))
-
-
-def func_sum(a):
+def func_sum(a, b):
     if b > 0:
-        return a + func_sum(a), b - 1
-    return 6
+        return a + func_sum(a / -2, b - 1)
+    return 0
 
-
-a = float(input('Количество элементов (n) вводится с клавиатуры: '))
-print(func_sum(a))
+b = int(input('Введите количество элементов: '))
+print(func_sum(1, b))
