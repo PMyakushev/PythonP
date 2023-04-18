@@ -44,10 +44,14 @@ w2 = r2.get_weight(20)
 
 print(f'Суммарный вес асфальта для двух объектов = {w1 + w2}')
 
+
+
+
+
 # class NonType:
 #     def __set__(self, instance, value):
 #         if value < 0:
-#             raise NameError("Должны быть числа ")
+#             raise NameError("Должнен быть кортеж ")
 #         instance.__dict__[self.my_attr] = value
 #
 # class Matrix:
